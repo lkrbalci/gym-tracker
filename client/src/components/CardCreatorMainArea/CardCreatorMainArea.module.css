@@ -1,0 +1,9 @@
+.card_creator_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 60vh;
+    border: 1px solid;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import { DragDropContext } from "react-beautiful-dnd";
 
-import DaysArea from "../DaysArea";
+import DaysArea from "../Days/DaysArea/DaysArea";
+import ExercisesArea from "../Exercises/ExercisesArea/ExercisesArea"
 import styles from "./CardCreatorMainArea.module.css"
 
 const dragEndHandler = (result) => {
@@ -13,6 +14,7 @@ const CardCreatorMainArea = () => {
     <div className={styles.card_creator_wrapper}>
       <DragDropContext onDragEnd={dragEndHandler}>
         <DaysArea />
+        <ExercisesArea />
       </DragDropContext>
     </div>
   );
