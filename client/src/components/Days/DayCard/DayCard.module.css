@@ -1,3 +1,7 @@
 .day_card_container {
     gap: 10px;
 }
+
+.day_card {
+    border: 1px solid;
+}

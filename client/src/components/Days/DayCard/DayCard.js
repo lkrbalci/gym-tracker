@@ -8,7 +8,7 @@ const DayCard = (props) => {
       <Droppable key={props.index} droppableId={props.day}>
         {(provided) => (
           <div
-            className="dayDroppable"
+            className={styles.day_card}
             {...provided.droppableProps}
             ref={provided.innerRef}
           >
