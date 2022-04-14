@@ -3,7 +3,7 @@ import { Draggable } from "react-beautiful-dnd";
 
 const ExercisesCard = (props) => {
   return (
-    <Draggable key="3" draggableId="3" index={props.index}>
+    <Draggable key={props.id} draggableId={props.id} index={props.index}>
       {(provided) => (
         <div
           className={styles.exercises_card}
@@ -11,7 +11,7 @@ const ExercisesCard = (props) => {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
-          <p>something</p>
+          <p>{props.id}</p>
         </div>
       )}
     </Draggable>

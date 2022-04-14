@@ -14,7 +14,7 @@ const days = [
 const DaysArea = () => {
   return (
     <div className={styles.days_area_container}>
-      {days.map((day, index) => <DayCard day={day} key={index} index={index} />)}
+      {days.map((day, index) => <DayCard id={day} key={index} index={index} />)}
     </div>
   );
 };
